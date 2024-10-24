@@ -1,0 +1,85 @@
+/* Style for the body to set background color and center content */
+body {
+    background-color: #3b4664;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Style for the screen area where numbers will be displayed */
+#screen {
+    display: flex;
+    justify-content: end;
+    width: 425px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #181f33;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding-right: 10px;
+    color: #ffffff;
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.3), 0 4px 0 #000000;
+}
+
+/* Container for the buttons */
+#btn-design {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Common styles for buttons */
+.num-btn, .exp-btn, .top-exp-btn, .top-right-exp-btn {
+    background-color: #eae3dc;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    width: 100px;
+    margin: 10px 5px;
+    box-shadow: 0 4px 0 #b3aca4, 0 6px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.top-exp-btn {
+    background-color: #eae3dc;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    width: 213px;
+    margin: 10px 5px;
+    box-shadow: 0 4px 0 #b3aca4, 0 6px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out; 
+}
+
+.num-btn:hover, .exp-btn:hover, .top-exp-btn:hover, .top-right-exp-btn:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 6px 0 #b3aca4, 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.num-btn:active, .exp-btn:active, .top-exp-btn:active, .top-right-exp-btn:active {
+    box-shadow: 0 2px 0 #b3aca4, 0 3px 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(2px);
+}
+
+/* Style for operator buttons */
+.exp-btn, .top-exp-btn, .top-right-exp-btn {
+    background-color: #647198;
+}
+
+/* Generic styles for h3 elements */
+h3 {
+    text-align: center;
+    padding: 5px 0;
+    color: #ffffff;
+}
+
+/* Styles for the first and second number displayed on the screen */
+.num-design {
+    margin: 0;
+    padding: 20px 2px;
+    display: flex;
+}

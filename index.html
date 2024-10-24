@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Added lang attribute for better accessibility -->
+    <head>
+        <meta charset="UTF-8"> <!-- Added charset for better character encoding -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- For responsive design -->
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css"> <!-- External CSS file -->
+    </head>
+    <body>
+        <!-- Load JavaScript file at the end of the body for better performance -->
+        <!-- Ensure the script is after the buttons for better execution of onclick functions -->
+        <div>
+            <!-- Screen to display the input/output of the calculator -->
+            <div id="screen"> 
+                <h3 id="input" class="num-design"></h3>  <!-- Input numbers -->
+            </div>
+        </div>
+
+        <div>
+            <div id="btn-design">   
+                <!-- Number buttons -->
+                <div class="btn-inside">
+                    <div>
+                        <button class="top-exp-btn" onclick="restart()">C</button>
+                        <button class="top-exp-btn" onclick="equals()">=</button>
+                    </div>
+                    <div>
+                        <button class="num-btn" onclick="one()">1</button>
+                        <button class="num-btn" onclick="two()">2</button>
+                        <button class="num-btn" onclick="three()">3</button>
+                        <button class="exp-btn" onclick="add()">+</button>
+                    </div>
+                    <div>
+                        <button class="num-btn" onclick="four()">4</button>
+                        <button class="num-btn" onclick="five()">5</button>
+                        <button class="num-btn" onclick="six()">6</button>
+                        <button class="exp-btn" onclick="subtract()">-</button>
+                    </div>
+                    <div>
+                        <button class="num-btn" onclick="seven()">7</button>
+                        <button class="num-btn" onclick="eight()">8</button>
+                        <button class="num-btn" onclick="nine()">9</button>
+                        <button class="exp-btn" onclick="multiply()">x</button>
+                    </div>
+                    <div>
+                        <button class="num-btn" onclick="pi()">π</button> <!-- Clear button -->
+                        <button class="num-btn" onclick="zero()">0</button>  <!-- Zero button -->
+                        <button class="num-btn" onclick="dot()">•</button> <!-- Equals button -->
+                        <button class="exp-btn" onclick="divide()">/</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="author-container">
+            <h3>This calculator was made by Ulugbek Khairulla 24.10.2024</h3>
+        </div>
+          
+          <style>
+            .author-container {
+              display: flex;
+              justify-content: center; /* Horizontally center the content */
+              flex-direction: row;
+              align-items: end; /* Vertically center the content if necessary */
+              text-align: center; /* Center text within the div */
+              height: 30px; /* Full viewport height to vertically center */
+            }
+          
+            .author-container h3 {
+              font-family: 'Roboto', sans-serif; /* Modern, clean font */
+              font-size: 10px; /* Adjust font size */
+              color: #444; /* Slightly darker text color for contrast */
+              padding: 5px 5px; /* Add padding for spacing */
+              background-color: #fff; /* White background for text block */
+              border-radius: 10px; /* More rounded corners */
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Stronger shadow for a modern look */
+              max-width: 500px; /* Set a max width for better readability */
+              margin: 200px 10px auto; /* Ensure the text block stays centered */
+              border: 1px solid #ddd; /* Subtle border for emphasis */
+              font-style: italic; /* Italicize the text */
+            }
+          </style>
+
+        <!-- JavaScript should be placed at the end of the body for performance improvement -->
+        <script src="calculator.js"></script> <!-- External JS file -->
+    </body>
+</html>
